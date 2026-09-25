@@ -1,0 +1,30 @@
+import SectionHeading from "./SectionHeading";
+import TimelineItem from "./TimelineItem";
+
+export default function ExperienceSection() {
+  return (
+    <section id="experience" className="max-w-4xl mx-auto px-6 py-16 border-t border-stone-200 scroll-mt-16">
+      <SectionHeading title="Experience" subtitle="Where I have learned and worked." />
+      <ol className="mt-8 space-y-8 border-l border-stone-200">
+        <TimelineItem
+          period="2024 – Present"
+          title="BS Information Technology"
+          place="Cebu Institute of Technology – University"
+          description="Developing skills in web architecture, object-oriented systems, and mobile engineering."
+        />
+        <TimelineItem
+          period="2025 – 2026"
+          title="Lead Project Developer"
+          place="Academic Software Projects"
+          description="Architected custom Java games, SQL databases, and native Android applications."
+        />
+        <TimelineItem
+          period="2022 – 2024"
+          title="Senior High School, STEM Strand"
+          place="University of Cebu – METC"
+          description="Built foundational skills in logic, programming, and web development fundamentals."
+        />
+      </ol>
+    </section>
+  );
+}
